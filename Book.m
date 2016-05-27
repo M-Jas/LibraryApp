@@ -17,6 +17,8 @@
     _checkedOut = false;
 }
 
-
+- (void)displayBookDetails {
+    NSLog(@"Title: %@ Author: %@ Page: %i", _title, _author, _pageCount);
+}
 
 @end
