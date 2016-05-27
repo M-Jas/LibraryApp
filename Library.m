@@ -11,13 +11,12 @@
 @implementation Library
 
 
-- (void)addBook:(Book *)book {
-
+- (void)createBookArray{
     _libraryArray = [NSMutableArray array];
-    [self.libraryArray addObject: book];
-    
-//    NSLog(@"%@", book);
-//    [array addObject: book];
+}
+
+- (void)addBook:(Book *)book {
+    [_libraryArray addObject: book];
 }
 
 

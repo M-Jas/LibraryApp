@@ -14,6 +14,7 @@
 
 - (void)addBook:(Book *)book;
 - (void)removeBook:(Book *)book;
+- (void)createBookArray;
 
 
 @end
