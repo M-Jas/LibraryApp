@@ -29,18 +29,24 @@ int main(int argc, const char * argv[]) {
         [arlingtonHeights addBook:americanPsycho];
         [arlingtonHeights addBook:wolfOfWallStreet];
         [arlingtonHeights addBook:theNoteBook];
-//        
+        
+        //Display book details
+        [theSunAlso displayBookDetails];
+       
+        //Diplay all the books in the Lib now
+        NSLog(@"The Lib has the following books: ");
         for (Book *b in arlingtonHeights.libraryArray){
-            NSLog(@"The Library has %@", b.title);
+            NSLog(@"%@", b.title);
         }
-        
+        //Removing Book
         [arlingtonHeights removeBook:theNoteBook];
-        
         NSLog(@"Hi I see you are checking out the %@ also know as the worst book of all time. It is about %i pages long and the Author is.....  but we burned it see below%@.", theSunAlso.title, [theSunAlso pageCount],  [theSunAlso author]);
         
         for (Book *b in arlingtonHeights.libraryArray){
             NSLog(@"The Library has %@", b.title);
         }
+        
+        
         
     }
     return 0;

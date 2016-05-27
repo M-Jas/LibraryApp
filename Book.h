@@ -15,8 +15,7 @@
 @property (nonatomic) int pageCount;
 @property (nonatomic) bool checkedOut;
 
+- (void)displayBookDetails;
 - (void)setBookDetails:(NSString*)title second:(NSString*)auth third:(int)pg fourth:(BOOL)status;
-
-
 
 @end

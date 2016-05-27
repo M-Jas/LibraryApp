@@ -10,7 +10,6 @@
 
 @implementation Library
 
-
 - (void)createBookArray{
     _libraryArray = [NSMutableArray array];
 }
